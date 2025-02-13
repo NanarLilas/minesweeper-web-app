@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Minesweeper</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="top">
+    <a href="#" onclick="location.reload(); return false;">
+      <img src="https://minesweeper.online/img/minesweeper-online.svg" alt="Minesweeper Online">
+    </a>
+    <h1>Minesweeper</h1>
+    <hr class="header-line">
+  </div>
+
+  <div class="Main">
+    <div class="SideBar">
+      <h3>Top 3 Rankings</h3>
+
+      <!-- Beginner Level -->
+      <div class="level-section">
+        <h4 style="color: #70ff7a;">Beginner</h4>
+        <ul id="scoreBoard-beginner"></ul>
+      </div>
+
+      <!-- Intermediate Level -->
+      <div class="level-section">
+        <h4 style="color: #ff955c;">Intermediate</h4>
+        <ul id="scoreBoard-intermediate"></ul>
+      </div>
+
+      <!-- Advanced Level -->
+      <div class="level-section">
+        <h4 style="color: #ff4747;">Expert</h4>
+        <ul id="scoreBoard-advanced"></ul>
+      </div>
+    </div>
+
+    <div class="Center">
+      <h2>Start new game</h2>
+
+      <div class="name-container">
+        <label for="playername">Name:</label>
+        <input type="text" id="playername" placeholder="Enter your name" maxlength="20">
+        <button id="submitName" type="button">Submit</button>
+        <p id="nameDisplay"></p>
+      </div>
+
+      <hr>
+
+      <!-- Level Selection Buttons -->
+      <div class="buttons">
+        <button class="image-button small-button" onclick="startGame('beginner')">
+          <p style="color: #70ff7a;">Beginner</p>
+          <img src="beginner_night.png" alt="Beginner Level" class="small-image">
+        </button>
+        <button class="image-button medium-button" onclick="startGame('intermediate')">
+          <p style="color: #ff955c;">Intermediate</p>
+          <img src="intermediate_night.png" alt="Intermediate Level" class="medium-image">
+        </button>
+        <button class="image-button large-button" onclick="startGame('advanced')">
+          <p style="color: #ff4747;">Expert</p>
+          <img src="expert_night.png" alt="Expert Level" class="large-image">
+        </button>
+      </div>
+
+      <div class="info-container">
+        <div class="hidden" id="timer"></div>
+        <div class="hidden" id="mineCounter"></div>
+        <div class="hidden" id="score"></div>
+      </div>
+
+      <div class="hidden" id="board"></div>
+
+      <div class="control-container">
+        <button class="hidden" id="replay_button">Replay</button>
+        <button class="hidden" id="Main_Menu">Main Menu</button>
+      </div>
+
+      <div class="Rules">
+        <h2>Rules</h2>
+        <hr>
+        <p>
+          Minesweeper rules are very simple. The board is divided into cells, with mines randomly distributed. To win, you need to open all the cells. The number on a cell shows the number of mines adjacent to it.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Minesweeper Game. All rights reserved.</p>
+      <p>Created by Nanar & Talia</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

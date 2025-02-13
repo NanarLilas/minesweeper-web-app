@@ -1,0 +1,16 @@
+{
+  "Top3Scores:"[
+    {
+      "level":"Beginner",
+      "scores":[{"name": "Chopper", "score" : 170}, {"name": "Nami", "score" : 150}, {"name": "Usopp", "score" : 100}]
+    },
+    {
+      "level":"Intermediate",
+      "scores":[{"name": "Sanji", "score" : 370}, {"name": "Brook", "score" : 350}, {"name": "Franky", "score" : 300}]
+    },
+    {
+      "level":"Advanced",
+      "scores":[{"name": "Luffy", "score" : 570}, {"name": "Zoro", "score" : 550}, {"name": "Robin", "score" : 500}]
+    }
+  ]
+}
